@@ -20,5 +20,5 @@ class Category < ApplicationRecord
     #     assert_response_not :success
     # end
 
-    validates :name, presence: true
+    validates :name, :details, presence: true
 end
