@@ -23,3 +23,7 @@ test:
 production:
   <<: *default
   database: journal-app_production
+  host: ENV['PGHOST']
+  username: ENV['PGUSER']
+  password: ENV['PGPASSWORD']
+  port: ENV['PGPORT']
