@@ -3,4 +3,25 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  # root 'categories#index'
+  # resources :categories
+
+  root 'categories#index'
+  
+  get '/categories' => 'categories#index', as: 'categories'
+  get '/categories/new' => 'categories#new', as: 'new_category'
+  post '/categories' => 'categories#create', as: 'create_category'
+  get '/categories/:id' => 'categories#show', as: 'category'
+  get '/categories/:id/edit' => 'categories#edit', as: 'edit_category'
+  patch '/categories/:id' => 'categories#update', as: 'update_category'
+  delete '/categories/:id' => 'categories#delete', as: 'delete_category'  
+
+  get '/categories/:category_id/tasks(.:format)' => 'tasks#index', as: 'category_tasks'
+  get '/categories/:category_id/tasks(.:format)/new' => 'tasks#new', as: 'new_category_task'
+  post '/categories/:category_id/tasks(.:format)' => 'tasks#create', as: 'create_category_task'
+  get '/categories/:category_id/tasks/:id(.:format)' => 'tasks#show', as: 'category_task' 
+  get '/categories/:category_id/tasks/:id/edit(.:format)' => 'tasks#edit', as: 'edit_category_task'
+  patch '/categories/:category_id/tasks/:id' => 'tasks#update', as: 'update_category_task'
+  delete '/categories/:category_id/tasks/:id' => 'tasks#delete', as: 'delete_category_task'
 end
