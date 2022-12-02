@@ -1,0 +1,14 @@
+<section class='new-section'>
+<%= render "nav" %>
+<div class='new-container'>
+<h2>New category</h2>
+
+<%= render "form", category: @category %>
+
+<br>
+
+<div>
+  <%= link_to "Back to categories", categories_path %>
+</div>
+</div>
+</section>
