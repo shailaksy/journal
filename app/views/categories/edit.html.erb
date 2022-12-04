@@ -1,14 +1,10 @@
 <section>
 <%= render "nav" %>
-<div class='container'>
-<h2>Edit category</h2>
-<%= render "category", category: @category %>
+<div class='edit-container'>
+<h1 class='title'>Edit Category</h1>
+<div class='form-container'>
+<%= render "form", category: @category %>
 
-<br>
-
-<div>
-  <%= link_to "Show this category", @category %> |
-  <%= link_to "Back to categories", category_path %>
 </div>
 </div>
 </section>

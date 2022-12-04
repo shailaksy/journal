@@ -1,0 +1,13 @@
+#categories {
+    width: 75%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+#category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-auto-rows: minmax(30vh, 30vh);
+    gap: 1em;
+}
+

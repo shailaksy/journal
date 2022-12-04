@@ -13,3 +13,87 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Didot', serif
+ }
+
+ a:link,
+ a:visited {
+    text-decoration: none;
+    color: black;
+ }
+
+ #user-nav,
+ nav {
+    width: 100vw;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(141, 172, 116, 0.43);
+ }
+
+ .title {
+    text-align: center;
+    padding: 1rem 0 0.5rem;
+ }
+
+ .form-container {
+    background-color: rgba(141, 172, 116, 0.43);
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+form > div {
+    padding: 0.5rem 0;
+}
+
+.form-errors {
+    list-style: none;
+}
+
+input[type=text], textarea {
+    margin: 0.35rem 0;
+    padding: 0.25rem 0.35rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.edit-link,
+.delete-button,
+input[type=submit] {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+}
+
+.edit-link,
+.delete-button {
+    background-color: rgba(141, 172, 116, 0.43);
+    color: black;
+}
+
+.edit-link:hover,
+.delete-button:hover,
+input[type=submit]:hover {
+    color: white;
+    background-color: rgb(120, 146, 98);
+}

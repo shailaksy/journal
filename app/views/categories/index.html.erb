@@ -1,13 +1,14 @@
 <%= render "nav" %>
-<h1>Categories</h1>
+<h1 class='title'>Categories</h1>
 
 <div id="categories">
-  <% @categories.each do |entry| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
+<div id='category-container'>
+  <% @categories.each do |category| %>
+    <%= link_to render(category), category %>
   <% end %>
+  <div id='new-category-container'>
+    <%= link_to "+", new_category_path %>
+  </div>
+</div>
 </div>
 
-<%= link_to "New category", new_category_path %>

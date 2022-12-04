@@ -1,0 +1,18 @@
+.show-container {
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.show-edit-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.2rem;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 103%;
+}

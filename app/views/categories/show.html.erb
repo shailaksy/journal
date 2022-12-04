@@ -1,13 +1,14 @@
 <%= render "nav" %>
 <p style="color: green"><%= notice %></p>
 <section>
-<div class='container'>
+<div class='show-container'>
 <%= render @category %>
 
-<div class='edit-category'>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %> |
-  <%= button_to "Destroy this category", @category, method: :delete %>
+<div class='show-edit-container'>
+  <%= link_to "Edit Category", edit_category_path(@category), class: 'edit-link' %>
+  <%= button_to "Destroy Category", @category, method: :delete, class: 'delete-button' %>
+  <%= link_to "Show Tasks", category_tasks_path(@category), class: 'edit-link' %>
 </div>
+
 </div>
 </section>

@@ -3,7 +3,7 @@
       <div style="color: red">
         <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
   
-        <ul>
+        <ul class='form-errors'>
           <% category.errors.each do |error| %>
             <li><%= error.full_message %></li>
           <% end %>
@@ -13,12 +13,12 @@
   
     <div>
       <%= form.label :name, style: "display: block" %>
-      <%= form.text_field :name %>
+      <%= form.text_field :name, maxlength: 30, autocomplete: 'off'  %>
     </div>
   
     <div>
       <%= form.label :details, style: "display: block" %>
-      <%= form.text_field :details %>
+      <%= form.text_area :details, maxlength: 335, rows: 6, autocomplete: 'off' %>
     </div>
   
     <div>

@@ -1,0 +1,13 @@
+<section class='new-task-section'>
+<%= render "nav" %>
+<div class='new-container'>
+<h1 class='title'>New Task</h1>
+<div class='form-container'>
+<%= render "form", task: @task, category: @category %>
+</div>
+
+<div class='new-back-container'>
+  <%= link_to "Back to tasks", category_tasks_path, class: 'edit-link' %>
+</div>
+</div>
+</section>

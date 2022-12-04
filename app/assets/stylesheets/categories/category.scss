@@ -1,0 +1,24 @@
+#new-category-container,
+.category-wrapper {
+    background-color: rgba(141, 172, 116, 0.43);
+    padding: 1rem;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.category-wrapper {
+    padding: 1rem;
+    overflow-wrap: break-word;
+    overflow: auto;
+}
+
+#new-category-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.category {
+    margin: 0.5rem;
+}
