@@ -4,9 +4,9 @@
 <div class='show-container'>
 <%= render @task %>
 
-<div class='edit-container'>
+<div class='show-edit-container'>
   <%= link_to "Edit Task", edit_category_task_path(@task), class:'edit-link' %>
-  <%= button_to "Destroy Task", delete_category_task_path(@task), method: :delete, class: 'edit-button' %>
+  <%= button_to "Destroy Task", delete_category_task_path(@task), method: :delete, class: 'delete-button' %>
   <%= link_to "Back to tasks", category_tasks_path, class:'edit-link' %>
 </div>
 </div>
