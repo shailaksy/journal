@@ -1,9 +1,11 @@
+#tasks,
 #categories {
     width: 75%;
     margin: auto;
     margin-top: 1rem;
 }
 
+#task-container,
 #category-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));

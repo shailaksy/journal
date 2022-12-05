@@ -1,3 +1,5 @@
+.task-wrapper,
+#new-task-container,
 #new-category-container,
 .category-wrapper {
     background-color: rgba(141, 172, 116, 0.43);
@@ -6,12 +8,14 @@
     height: 100%;
 }
 
+.task-wrapper,
 .category-wrapper {
     padding: 1rem;
     overflow-wrap: break-word;
     overflow: auto;
 }
 
+#new-task-container,
 #new-category-container {
     display: flex;
     align-items: center;
@@ -19,6 +23,7 @@
     font-size: 2.5rem;
 }
 
+.task,
 .category {
     margin: 0.5rem;
 }
