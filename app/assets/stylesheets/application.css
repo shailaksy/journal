@@ -18,8 +18,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Didot', serif
+    font-family: 'Didot', serif;
  }
+
+body {
+    background-image: url("doodle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
  a:link,
  a:visited {
@@ -27,13 +33,13 @@
     color: black;
  }
 
- #user-nav,
+ .user-nav,
  nav {
     width: 100vw;
     padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(141, 172, 116, 0.43);
+    background-color: rgb(178, 201, 159);
  }
 
  .title {
@@ -42,7 +48,7 @@
  }
 
  .form-container {
-    background-color: rgba(141, 172, 116, 0.43);
+    background-color: rgb(178, 201, 159);
     width: 50%;
     margin: auto;
     margin-top: 1rem;
@@ -51,7 +57,7 @@
 }
 
 .new_user {
-    background-color: rgba(141, 172, 116, 0.43);
+    background-color: rgb(178, 201, 159);
     width: 22%;
     margin: auto;
     margin-top: 1rem;
@@ -99,7 +105,7 @@ input[type=submit] {
 
 .edit-link,
 .delete-button {
-    background-color: rgba(141, 172, 116, 0.43);
+    background-color: rgb(178, 201, 159);
     color: black;
 }
 
@@ -119,4 +125,9 @@ input[type=submit]:hover {
 
 .log-in-options > a:hover {
     text-decoration: underline;
+}
+
+.nav-logo {
+    height: 3.5vh;
+    width: auto;
 }

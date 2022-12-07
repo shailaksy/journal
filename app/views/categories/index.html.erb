@@ -3,7 +3,7 @@
 
 <div id="categories">
 <div id='category-container'>
-  <% @user.categories.each do |category| %>
+  <% @categories.each do |category| %>
     <%= link_to render(category), category %>
   <% end %>
   <div id='new-category-container'>

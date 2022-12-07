@@ -1,0 +1,32 @@
+.home {
+    width: 70%;
+}
+
+.home > .club {
+    position: absolute;
+    height: 60vh;
+    width: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.info > * {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.info > p {
+    font-size: 145%;
+}
