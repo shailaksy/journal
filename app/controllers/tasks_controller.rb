@@ -3,8 +3,8 @@ class TasksController < ApplicationController
     before_action :set_task, only: %i[show edit update destroy] 
 
     def index
-        @tasks = Task.all
         @category = Category.find params[:category_id]
+        @tasks = Task.all
     end
 
     def new

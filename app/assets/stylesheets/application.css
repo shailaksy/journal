@@ -50,6 +50,15 @@
     border-radius: 10px;
 }
 
+.new_user {
+    background-color: rgba(141, 172, 116, 0.43);
+    width: 22%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
 form > div {
     padding: 0.5rem 0;
 }
@@ -58,7 +67,10 @@ form > div {
     list-style: none;
 }
 
-input[type=text], textarea {
+input[type=email],
+input[type=password],
+input[type=text], 
+textarea {
     margin: 0.35rem 0;
     padding: 0.25rem 0.35rem;
     border-radius: 5px;
@@ -96,4 +108,15 @@ input[type=submit] {
 input[type=submit]:hover {
     color: white;
     background-color: rgb(120, 146, 98);
+}
+
+.log-in-options {
+    margin: auto;
+    width: 22%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.log-in-options > a:hover {
+    text-decoration: underline;
 }
