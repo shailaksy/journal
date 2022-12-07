@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { sessions: 'users/sessions' }
 
-  root to: 'application#index'
+  root to: 'home#index'
 
-  get '/' => 'application#index', as: 'home'
+  get '/' => 'home#index', as: 'home'
 
   get '/categories' => 'categories#index', as: 'categories'
   get '/categories/new' => 'categories#new', as: 'new_category'

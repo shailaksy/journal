@@ -19,10 +19,9 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   # DELETE /resource/sign_out
-  def destroy
-    # super
-    redirect_to users/sign_in_url, notice: "User was successfully signed out."
-  end
+  # def destroy
+  #   super
+  # end
 
   # protected
 
