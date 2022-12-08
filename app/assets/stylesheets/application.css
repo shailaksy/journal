@@ -24,7 +24,7 @@
 body {
     background-image: url("doodle.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
 }
 
  a:link,
@@ -36,10 +36,15 @@ body {
  .user-nav,
  nav {
     width: 100vw;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     display: flex;
     justify-content: space-between;
     background-color: rgb(178, 201, 159);
+ }
+
+ .user-nav-buttons > a:hover,
+ nav > a:hover {
+    text-decoration: underline;
  }
 
  .title {
@@ -116,13 +121,15 @@ input[type=submit]:hover {
     background-color: rgb(120, 146, 98);
 }
 
-.log-in-options {
+.log-in-options,
+.edit-profile-options {
     margin: auto;
     width: 22%;
     text-align: center;
     padding: 1rem;
 }
 
+.edit-profile-options > *:hover,
 .log-in-options > a:hover {
     text-decoration: underline;
 }
@@ -130,4 +137,25 @@ input[type=submit]:hover {
 .nav-logo {
     height: 3.5vh;
     width: auto;
+}
+
+#logout-button,
+#cancel-account-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+#logout-button:hover,
+#cancel-account-button:hover {
+    text-decoration: underline;
+}
+
+.user-nav-buttons {
+    display: flex;
+}
+
+.user-nav-buttons > * {
+    padding: 0 0 0 0.5rem;
 }
