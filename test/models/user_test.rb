@@ -1,10 +1,8 @@
 require "test_helper"
 
-##edit paths
-
 class UserTest < ActiveSupport::TestCase
   setup do
-    @user = users(:one)
+    @user = current_user
   end
 
   test "should get index" do

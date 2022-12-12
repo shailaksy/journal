@@ -1,10 +1,13 @@
 require "test_helper"
 
 class TaskTest < ActiveSupport::TestCase
+
+  setup do
+    @category = current_user.categories
+  end
+  
   test "should create a task under a category" do
-    category = Category.new
-    category.name = "test"
-    category.details = 'details'
+    category_id = 1
     category.save
     task = Task.new
     task.name = 'task test'
@@ -13,9 +16,7 @@ class TaskTest < ActiveSupport::TestCase
   end
 
   test "should update task details" do
-    category = Category.new
-    category.name = "test"
-    category.details = 'details'
+    category_id = 1
     category.save
     task = Task.new
     task.name = 'task test'
@@ -25,9 +26,7 @@ class TaskTest < ActiveSupport::TestCase
   end
 
   test "should show task details" do
-    category = Category.new
-    category.name = "test"
-    category.details = 'details'
+    category_id = 1
     category.save
     task = Task.new
     task.name = 'task test'

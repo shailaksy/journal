@@ -20,6 +20,11 @@
       <%= form.label :details, style: "display: block" %>
       <%= form.text_area :details, maxlength: 335, rows: 6, autocomplete: 'off' %>
     </div>
+
+    <div>
+      <%= form.label :deadline, style: "display: block" %>
+      <%= form.date_field :deadline %>
+    </div>
   
     <div>
       <%= form.submit %>
